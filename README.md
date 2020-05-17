@@ -9,8 +9,9 @@ So this is majorly broken down in three parts
 
 Some Fun generated lyrics
 
-<img src="https://i.imgur.com/NbeSovp.png"  align="center"/>
+<img src="https://i.imgur.com/29wWIzt.png" align="center" width=500px/>
 ---
-<img src="https://i.imgur.com/3vBRHEX.png"  align="center"/>
+<img src="https://i.imgur.com/NbeSovp.png"  align="center" width=500px/>
 ---
-<img src="https://i.imgur.com/29wWIzt.png" align="center"/>
+<img src="https://i.imgur.com/3vBRHEX.png"  align="center" width=500px/>
+---
