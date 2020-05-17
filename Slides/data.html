@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>Getting the lyrics slides</title>
+<title>01.Getting the lyrics slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -16475,6 +16475,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <center>
 <img src="https://media.giphy.com/media/Wj7lNjMNDxSmc/giphy.gif"  align="center"/>
+<h2>Hi!</h2>
 </center>
 </div>
 </div>
@@ -16485,10 +16486,17 @@ a.anchor-link {
 <h1 id="Me?-Who?">Me? Who?<a class="anchor-link" href="#Me?-Who?">&#182;</a></h1><p><br/>
 <br/></p>
 <ul>
-<li>🖤 NLP</li>
-<li>🖤 Machine Learning </li>
+<li>❤️ NLP </li>
 <li>🖤 Arctic Monkeys</li>
 <li>Final Year Student waiting for the world to end because I don't wanna give exams</li>
+</ul>
+<p><br/>
+<br/></p>
+<ul>
+<li>ex-NLP Intern at <a href="verloop.io">Verloop.io</a></li>
+<li>Previously gave a talk at PyData on custom name extractor for chat based conversations</li>
+<li>12th on global leaderboard for phase one of semeval's sentimix task</li>
+<li>One of the owners of NLP Data API for covid19india.org</li>
 </ul>
 <p><br/>
 <br/></p>
@@ -16513,6 +16521,40 @@ a.anchor-link {
 <center>
 <img src="https://i.imgur.com/CrrO1Nd.png">
 </center>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center><h2>What are we going to learn today - </h2></center>
+<center>
+<img src="https://media.giphy.com/media/tHufwMDTUi20E/giphy.gif" width=400px>
+</center>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="A-little-bit-about-Data-Augmentation">A little bit about <em>Data Augmentation</em><a class="anchor-link" href="#A-little-bit-about-Data-Augmentation">&#182;</a></h3><p><br /></p>
+<h3 id="A-little-but-about-Transfer-Learning">A little but about <em>Transfer Learning</em><a class="anchor-link" href="#A-little-but-about-Transfer-Learning">&#182;</a></h3><p><br /></p>
+<h3 id="And-how-to-create-any-kind-of-text-generator-from-just-a-text-file">And how to create any kind of text generator from just a text file<a class="anchor-link" href="#And-how-to-create-any-kind-of-text-generator-from-just-a-text-file">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="What-are-my-assumtions--">What are my assumtions -<a class="anchor-link" href="#What-are-my-assumtions--">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="You're-comfortable-with-python">You're comfortable with python<a class="anchor-link" href="#You're-comfortable-with-python">&#182;</a></h3><p><br /></p>
+<h3 id="You're-comfortable-with-basics-of-machine-learning">You're comfortable with basics of machine learning<a class="anchor-link" href="#You're-comfortable-with-basics-of-machine-learning">&#182;</a></h3>
 </div>
 </div>
 </div></section></section><section><section>
@@ -16984,6 +17026,29 @@ Done. Found 148 songs.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="We-need-talk-about-BERT-before-this">We need talk about BERT before this<a class="anchor-link" href="#We-need-talk-about-BERT-before-this">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center>
+<img src="https://miro.medium.com/max/300/0*2XpE-VjhhLGkFDYg.jpg">
+</center>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="We-are-going-to-use-nlpaug-for-text-augumentation">We are going to use <a href="https://github.com/makcedward/nlpaug">nlpaug</a> for text augumentation<a class="anchor-link" href="#We-are-going-to-use-nlpaug-for-text-augumentation">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Contextual-WordEmbs-Augumentation">Contextual WordEmbs Augumentation<a class="anchor-link" href="#Contextual-WordEmbs-Augumentation">&#182;</a></h1>
 </div>
 </div>
@@ -17022,10 +17087,10 @@ Done. Found 148 songs.
 
  
  
-<div id="d4c59f36-45c8-4cef-a401-5be7dc178c93"></div>
+<div id="cf576642-7af5-463b-a14e-301214b1f901"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#d4c59f36-45c8-4cef-a401-5be7dc178c93');
+var element = $('#cf576642-7af5-463b-a14e-301214b1f901');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "323e3c9ed6b143169809ef86381432dd", "version_major": 2, "version_minor": 0}
@@ -17055,10 +17120,10 @@ var element = $('#d4c59f36-45c8-4cef-a401-5be7dc178c93');
 
  
  
-<div id="a1b8b766-e69f-4d2a-aa06-212dea76470d"></div>
+<div id="8a258d10-caf1-4d07-88d0-b9843e143df0"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#a1b8b766-e69f-4d2a-aa06-212dea76470d');
+var element = $('#8a258d10-caf1-4d07-88d0-b9843e143df0');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "ff1b999d0bcb40749c0792049200bb1c", "version_major": 2, "version_minor": 0}
@@ -17088,10 +17153,10 @@ var element = $('#a1b8b766-e69f-4d2a-aa06-212dea76470d');
 
  
  
-<div id="4557a8fb-d7ac-4487-8fbe-b17a962f899a"></div>
+<div id="f88a4940-1338-4339-a5c2-b72f922ac2e0"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#4557a8fb-d7ac-4487-8fbe-b17a962f899a');
+var element = $('#f88a4940-1338-4339-a5c2-b72f922ac2e0');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "d125a25d67da44f9bb291404ae1e4469", "version_major": 2, "version_minor": 0}
@@ -17315,19 +17380,6 @@ Percentage of Augumented Text : 47.37158479949714
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
 
