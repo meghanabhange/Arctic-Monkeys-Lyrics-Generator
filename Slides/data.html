@@ -16488,14 +16488,14 @@ a.anchor-link {
 <ul>
 <li>❤️ NLP </li>
 <li>🖤 Arctic Monkeys</li>
-<li>Final Year Student waiting for the world to end because I don't wanna give exams</li>
+<li>Final Year Student waiting for the world to end because I don't want to give exams</li>
 </ul>
 <p><br/>
 <br/></p>
 <ul>
 <li>ex-NLP Intern at <a href="verloop.io">Verloop.io</a></li>
-<li>Previously gave a talk at PyData on custom name extractor for chat based conversations</li>
-<li>12th on global leaderboard for phase one of SemEval's sentimix task</li>
+<li>Previously gave a talk at PyData on custom name extractor for chat-based conversations</li>
+<li>12th on the global leaderboard for SemEval's sentimix task (phase one)</li>
 <li>One of the owners of NLP Data API for covid19india.org</li>
 </ul>
 <p><br/>
@@ -16538,7 +16538,7 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="A-little-bit-about-Data-Augmentation">A little bit about <em>Data Augmentation</em><a class="anchor-link" href="#A-little-bit-about-Data-Augmentation">&#182;</a></h3><p><br /></p>
-<h3 id="A-little-but-about-Transfer-Learning">A little but about <em>Transfer Learning</em><a class="anchor-link" href="#A-little-but-about-Transfer-Learning">&#182;</a></h3><p><br /></p>
+<h3 id="A-little-bit-about-Transfer-Learning">A little bit about <em>Transfer Learning</em><a class="anchor-link" href="#A-little-bit-about-Transfer-Learning">&#182;</a></h3><p><br /></p>
 <h3 id="And-how-to-create-any-kind-of-text-generator-from-just-a-text-file">And how to create any kind of text generator from just a text file<a class="anchor-link" href="#And-how-to-create-any-kind-of-text-generator-from-just-a-text-file">&#182;</a></h3>
 </div>
 </div>
@@ -16546,7 +16546,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="What-are-my-assumtions--">What are my assumtions -<a class="anchor-link" href="#What-are-my-assumtions--">&#182;</a></h1>
+<h1 id="What-are-my-assumptions--">What are my assumptions -<a class="anchor-link" href="#What-are-my-assumptions--">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
@@ -16577,8 +16577,17 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="To-get-all-those-amazing-Arctic-Monkeys-lyrics-I-am-using-lyricsgenius-Python-Package">To get all those amazing Arctic Monkeys lyrics I am using <a href="https://github.com/johnwmillr/LyricsGenius">lyricsgenius Python Package</a><a class="anchor-link" href="#To-get-all-those-amazing-Arctic-Monkeys-lyrics-I-am-using-lyricsgenius-Python-Package">&#182;</a></h3><h3 id="First-you-need-to-get-your-API-Keys,-you-can-do-that-by-registering-your-project-here-and-generating-a-client-access-token">First you need to get your API Keys, you can do that by registering your project here and generating a client access token<a class="anchor-link" href="#First-you-need-to-get-your-API-Keys,-you-can-do-that-by-registering-your-project-here-and-generating-a-client-access-token">&#182;</a></h3><h3 id="Get-your-API-key-here"><a href="https://genius.com/api-clients">Get your API key here</a><a class="anchor-link" href="#Get-your-API-key-here">&#182;</a></h3><center>
-<img src="https://i.imgur.com/xmQDBgY.png"  align="center"/>
+<h2 id="What-are-we-going-to-use?">What are we going to use?<a class="anchor-link" href="#What-are-we-going-to-use?">&#182;</a></h2><p><br /></p>
+<h3 id="lyricsgenius-Python-Package"><a href="https://github.com/johnwmillr/LyricsGenius">lyricsgenius Python Package</a><a class="anchor-link" href="#lyricsgenius-Python-Package">&#182;</a></h3><p><br /></p>
+<h3 id="Get-your-API-key-here"><a href="https://genius.com/api-clients">Get your API key here</a><a class="anchor-link" href="#Get-your-API-key-here">&#182;</a></h3>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center>
+<img src="https://i.imgur.com/xmQDBgY.png"  align="center" width=400px/>
 </center>
 </div>
 </div>
@@ -16589,7 +16598,7 @@ a.anchor-link {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">api</span> <span class="o">=</span> <span class="n">genius</span><span class="o">.</span><span class="n">Genius</span><span class="p">(</span><span class="n">API_KEY</span><span class="p">)</span>
-<span class="n">artist</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">search_artist</span><span class="p">(</span><span class="n">ARTIST</span><span class="p">)</span>
+<span class="n">artist</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">search_artist</span><span class="p">(</span><span class="n">ARTIST</span><span class="p">)</span> 
 <span class="nb">print</span><span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">songs</span><span class="p">)</span>
 </pre></div>
 
@@ -16769,13 +16778,6 @@ Done. Found 148 songs.
 </div>
 </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="We-can-save-all-the-lyrics-as-JSON">We can save all the lyrics as JSON<a class="anchor-link" href="#We-can-save-all-the-lyrics-as-JSON">&#182;</a></h2>
-</div>
-</div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -16811,26 +16813,10 @@ Done. Found 148 songs.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Skipping-other-details-like-Album-name,-release-date-and-much-more-to-keep-what's-relevant-to-use.-The-Lyrics">Skipping other details like Album name, release date and much more to keep what's relevant to use. The Lyrics<a class="anchor-link" href="#Skipping-other-details-like-Album-name,-release-date-and-much-more-to-keep-what's-relevant-to-use.-The-Lyrics">&#182;</a></h3>
+<h3 id="Skipping-other-details-like-album-name,-release-date-etc.-to-keep-what's-relevant-to-us---the-lyrics">Skipping other details like album name, release date etc. to keep what's relevant to us - the lyrics<a class="anchor-link" href="#Skipping-other-details-like-album-name,-release-date-etc.-to-keep-what's-relevant-to-us---the-lyrics">&#182;</a></h3>
 </div>
 </div>
 </div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Lyrics_ArcticMonkeys.json&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
@@ -16916,14 +16902,7 @@ Done. Found 148 songs.
 </div>
 </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="getting-rid-of-some-mess">getting rid of some mess<a class="anchor-link" href="#getting-rid-of-some-mess">&#182;</a></h3>
-</div>
-</div>
-</div><div class="fragment">
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
@@ -17013,7 +16992,7 @@ Done. Found 148 songs.
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17087,10 +17066,10 @@ Done. Found 148 songs.
 
  
  
-<div id="7de5cc34-c572-4367-b34b-0f8c0a939835"></div>
+<div id="d687f654-ebf6-439e-bdbd-68423fcd5e0d"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#7de5cc34-c572-4367-b34b-0f8c0a939835');
+var element = $('#d687f654-ebf6-439e-bdbd-68423fcd5e0d');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "323e3c9ed6b143169809ef86381432dd", "version_major": 2, "version_minor": 0}
@@ -17120,10 +17099,10 @@ var element = $('#7de5cc34-c572-4367-b34b-0f8c0a939835');
 
  
  
-<div id="3a36878f-43cf-4596-bea5-33850c5f4ede"></div>
+<div id="c2a5165b-e0e9-4928-af3e-937218f77204"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#3a36878f-43cf-4596-bea5-33850c5f4ede');
+var element = $('#c2a5165b-e0e9-4928-af3e-937218f77204');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "ff1b999d0bcb40749c0792049200bb1c", "version_major": 2, "version_minor": 0}
@@ -17153,10 +17132,10 @@ var element = $('#3a36878f-43cf-4596-bea5-33850c5f4ede');
 
  
  
-<div id="0d836c8b-4655-4407-8899-280bf1d2e68d"></div>
+<div id="a891f54f-c3df-463e-aa46-7748153add82"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#0d836c8b-4655-4407-8899-280bf1d2e68d');
+var element = $('#a891f54f-c3df-463e-aa46-7748153add82');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "d125a25d67da44f9bb291404ae1e4469", "version_major": 2, "version_minor": 0}
@@ -17233,71 +17212,6 @@ what have you got colour in your yellow cheeks ?
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">splitter</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-    <span class="n">pieces</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-    <span class="k">return</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pieces</span><span class="p">[</span><span class="n">i</span> <span class="p">:</span> <span class="n">i</span> <span class="o">+</span> <span class="n">n</span><span class="p">]))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pieces</span><span class="p">),</span> <span class="n">n</span><span class="p">)]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">lyrics</span><span class="p">)</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[19]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>172477</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># write a txt file for just the original dataset</span>
-<span class="n">text_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;drive/My Drive/ArcticMonkeys/am_corpus_original.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-<span class="n">text_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-<span class="n">text_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
