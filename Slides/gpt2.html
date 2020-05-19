@@ -16500,7 +16500,23 @@ a.anchor-link {
 <h2 id="Can-predict-what-comes-next-based-on-previous-inputs">Can predict what comes next based on previous inputs<a class="anchor-link" href="#Can-predict-what-comes-next-based-on-previous-inputs">&#182;</a></h2>
 </div>
 </div>
-</div></section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>"Language Models (LMs) estimate the relative likelihood of different phrases and are useful in many different Natural Language Processing applications (NLP). For example, they have been used in Twitter Bots for ‘robot’ accounts to form their own sentences." - <a href="https://towardsdatascience.com/learning-nlp-language-models-with-real-data-cdff04c51c25">ref</a>
+<br /></p>
+</li>
+<li><p>The goal of probabilistic language modelling is to calculate the probability of a sentence of sequence of words and can be used to find the probability of the next word in the sequence - <a href="https://towardsdatascience.com/learning-nlp-language-models-with-real-data-cdff04c51c25">ref</a></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16517,6 +16533,32 @@ a.anchor-link {
 </center>
 </div>
 </div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Transformers were developed to solve the problem of sequence transduction, or neural machine translation. That means any task that transforms an input sequence to an output sequence. This includes speech recognition, text-to-speech transformation, etc.. - <a href="https://towardsdatascience.com/transformers-141e32e69591">ref</a></li>
+</ul>
+<p><br /></p>
+<ul>
+<li>Neural networks can achieve this same behavior using attention, focusing on part of a subset of the information they are given. For example, an RNN can attend over the output of another RNN. At every time step, it focuses on different positions in the other RNN.
+To solve these problems, Attention is a technique that is used in a neural network. For RNNs, instead of only encoding the whole sentence in a hidden state, each word has a corresponding hidden state that is passed all the way to the decoding stage. Then, the hidden states are used at each step of the RNN to decode - <a href="https://towardsdatascience.com/transformers-141e32e69591">ref</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</aside></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center>    
+<img src="https://miro.medium.com/max/1400/1*GQzYZuAMWr3lN_IACBfvAA.png" width=600px>
+</center>
+</div>
+</div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -16524,6 +16566,29 @@ a.anchor-link {
 <center>
 <h2> GPT-2 </h2>
 <img src="https://jalammar.github.io/images/xlnet/gpt-2-autoregression-2.gif">
+</center>
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="GPT-2-stands-for-&#8220;Generative-Pretrained-Transformer-2&#8221;:">GPT-2 stands for &#8220;Generative Pretrained Transformer 2&#8221;:<a class="anchor-link" href="#GPT-2-stands-for-&#8220;Generative-Pretrained-Transformer-2&#8221;:">&#182;</a></h2><ul>
+<li>“Generative” means the model was trained to predict (or “generate”) the next token in a sequence of tokens in an unsupervised way. In other words, the model was thrown a whole lot of raw text data and asked to figure out the statistical features of the text to create more text.</li>
+<li>“Pretrained” means OpenAI created a large and powerful language model, which they fine-tuned for specific tasks like machine translation later on. This is kind of like transfer learning with Imagenet, except it’s for NLP. This retraining approach became quite popular in 2018 and is very likely to be a trend that continues throughout 2019.</li>
+<li>“Transformer” means OpenAI used the transformer architecture, as opposed to an RNN, LSTM, GRU or any other 3/4 letter acronym you have in mind. I’m not going to discuss the transformer architecture in detail since there’s already another great article on the FloydHub blog that explains how it works. - <a href="https://blog.floydhub.com/gpt2/">ref</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</aside></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center>    
+<img src="https://paper-attachments.dropbox.com/s_972195A84441142620E4C92312EA63C9665C3A86AFFD1D713034FA568ADFC5F9_1555423661299_GPT2.png">
 </center>
 </div>
 </div>
