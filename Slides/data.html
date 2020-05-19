@@ -16507,14 +16507,45 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section></section><section><section>
+</div><aside class="notes">
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="~Arctic-Monkeys~-&lt;&lt;The-artist-you-&#10084;&#65039;&gt;&gt;-lyric-generator">~Arctic Monkeys~ &lt;&lt;The artist you &#10084;&#65039;&gt;&gt; lyric generator<a class="anchor-link" href="#~Arctic-Monkeys~-&lt;&lt;The-artist-you-&#10084;&#65039;&gt;&gt;-lyric-generator">&#182;</a></h1>
+<h1 id="This-talk-is-going-to-be-sectioned-in-three-parts">This talk is going to be sectioned in three parts<a class="anchor-link" href="#This-talk-is-going-to-be-sectioned-in-three-parts">&#182;</a></h1><p><br/></p>
+<ul>
+<li>The Data Collection--How to get your lyrics</li>
+<li>The training model and understand a bit about transfer learning buzzwords</li>
+<li>Using the trained model to make our generator</li>
+</ul>
+<p><br /></p>
+<h3 id="It's-also-a-walkthrough-of-the-three-notebooks-that-you-can-directly-use-to-create-a-lyric-generator-for-the-artist-you-want">It's also a walkthrough of the three notebooks that you can directly use to create a lyric generator for the artist you want<a class="anchor-link" href="#It's-also-a-walkthrough-of-the-three-notebooks-that-you-can-directly-use-to-create-a-lyric-generator-for-the-artist-you-want">&#182;</a></h3>
 </div>
 </div>
-</div></section><section>
+</div>
+</aside></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="~Arctic-Monkeys~-&lt;&lt;The-artist-you-&#10084;&#65039;&gt;&gt;-lyrics-generator">~Arctic Monkeys~ &lt;&lt;The artist you &#10084;&#65039;&gt;&gt; lyrics generator<a class="anchor-link" href="#~Arctic-Monkeys~-&lt;&lt;The-artist-you-&#10084;&#65039;&gt;&gt;-lyrics-generator">&#182;</a></h1>
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What we are trying to do here is create a next word/sentence predictor based on initial text data. However when dealing with something like lyrics you don't have a lot of data to work with, so we are going to try two different workarounds</p>
+<p><br /></p>
+<ul>
+<li>Text Augmentation</li>
+<li>Transfer Learning</li>
+</ul>
+
+</div>
+</div>
+</div>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16523,7 +16554,19 @@ a.anchor-link {
 </center>
 </div>
 </div>
-</div></section></section><section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Example of a generated text from Arctic Monkeys lyric generator. I can't help but fall in love with the phrase "fiction-esque sense of humour."</p>
+<p><br /></p>
+<p>If you do end up creating some fun lyrics based off your favourite artist, do tweet them at me @meghanabhange</p>
+
+</div>
+</div>
+</div>
+</aside></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16537,8 +16580,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="A-little-bit-about-Data-Augmentation">A little bit about <em>Data Augmentation</em><a class="anchor-link" href="#A-little-bit-about-Data-Augmentation">&#182;</a></h3><p><br /></p>
-<h3 id="A-little-bit-about-Transfer-Learning">A little bit about <em>Transfer Learning</em><a class="anchor-link" href="#A-little-bit-about-Transfer-Learning">&#182;</a></h3><p><br /></p>
+<h3 id="A-little-bit-about-Data-Augmentation">A little bit about <em><a href="https://nanonets.com/blog/data-augmentation-how-to-use-deep-learning-when-you-have-limited-data-part-2/">Data Augmentation</a></em><a class="anchor-link" href="#A-little-bit-about-Data-Augmentation">&#182;</a></h3><p><br /></p>
+<h3 id="A-little-bit-about-Transfer-Learning">A little bit about <em><a href="https://towardsdatascience.com/what-is-transfer-learning-8b1a0fa42b4">Transfer Learning</a></em><a class="anchor-link" href="#A-little-bit-about-Transfer-Learning">&#182;</a></h3><p><br /></p>
 <h3 id="And-how-to-create-any-kind-of-text-generator-from-just-a-text-file">And how to create any kind of text generator from just a text file<a class="anchor-link" href="#And-how-to-create-any-kind-of-text-generator-from-just-a-text-file">&#182;</a></h3>
 </div>
 </div>
@@ -16582,7 +16625,20 @@ a.anchor-link {
 <h3 id="Get-your-API-key-here"><a href="https://genius.com/api-clients">Get your API key here</a><a class="anchor-link" href="#Get-your-API-key-here">&#182;</a></h3>
 </div>
 </div>
-</div></section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>lyricsgenius provides a simple interface to the song, artist, and lyrics data stored on Genius.com.</li>
+<li><a href="https://www.johnwmillr.com/scraping-genius-lyrics/">Scraping Lyrics from lyric Genius</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16996,7 +17052,7 @@ Done. Found 148 songs.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Text-Augumentation">Text Augumentation<a class="anchor-link" href="#Text-Augumentation">&#182;</a></h1><center>
+<h1 id="Text-Augmentation">Text Augmentation<a class="anchor-link" href="#Text-Augmentation">&#182;</a></h1><center>
 <img src="https://i.imgur.com/r0JeqCr.gif"/>
 </center>
 </div>
@@ -17021,14 +17077,14 @@ Done. Found 148 songs.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="We-are-going-to-use-nlpaug-for-text-augumentation">We are going to use <a href="https://github.com/makcedward/nlpaug">nlpaug</a> for text augumentation<a class="anchor-link" href="#We-are-going-to-use-nlpaug-for-text-augumentation">&#182;</a></h2>
+<h2 id="We-are-going-to-use-nlpaug-for-text-augmentation">We are going to use <a href="https://github.com/makcedward/nlpaug">nlpaug</a> for text augmentation<a class="anchor-link" href="#We-are-going-to-use-nlpaug-for-text-augmentation">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Contextual-WordEmbs-Augumentation">Contextual WordEmbs Augumentation<a class="anchor-link" href="#Contextual-WordEmbs-Augumentation">&#182;</a></h1>
+<h1 id="Contextual-WordEmbs-Augmentation">Contextual WordEmbs Augmentation<a class="anchor-link" href="#Contextual-WordEmbs-Augmentation">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
@@ -17066,10 +17122,10 @@ Done. Found 148 songs.
 
  
  
-<div id="d687f654-ebf6-439e-bdbd-68423fcd5e0d"></div>
+<div id="968f1df6-71b5-4cb4-b540-fd16ce662f0e"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#d687f654-ebf6-439e-bdbd-68423fcd5e0d');
+var element = $('#968f1df6-71b5-4cb4-b540-fd16ce662f0e');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "323e3c9ed6b143169809ef86381432dd", "version_major": 2, "version_minor": 0}
@@ -17099,10 +17155,10 @@ var element = $('#d687f654-ebf6-439e-bdbd-68423fcd5e0d');
 
  
  
-<div id="c2a5165b-e0e9-4928-af3e-937218f77204"></div>
+<div id="d3523cfd-0994-425d-88d3-293edafb6cbd"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#c2a5165b-e0e9-4928-af3e-937218f77204');
+var element = $('#d3523cfd-0994-425d-88d3-293edafb6cbd');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "ff1b999d0bcb40749c0792049200bb1c", "version_major": 2, "version_minor": 0}
@@ -17132,10 +17188,10 @@ var element = $('#c2a5165b-e0e9-4928-af3e-937218f77204');
 
  
  
-<div id="a891f54f-c3df-463e-aa46-7748153add82"></div>
+<div id="3202ffd5-e275-49e1-8812-41f127d99ecb"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#a891f54f-c3df-463e-aa46-7748153add82');
+var element = $('#3202ffd5-e275-49e1-8812-41f127d99ecb');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "d125a25d67da44f9bb291404ae1e4469", "version_major": 2, "version_minor": 0}
@@ -17166,7 +17222,7 @@ what have you got colour in your yellow cheeks ?
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Contextual-WordEmbs-Augumentation-in-a-flow">Contextual WordEmbs Augumentation in a flow<a class="anchor-link" href="#Contextual-WordEmbs-Augumentation-in-a-flow">&#182;</a></h1>
+<h1 id="Contextual-WordEmbs-Augmentation-in-a-flow">Contextual WordEmbs Augmentation in a flow<a class="anchor-link" href="#Contextual-WordEmbs-Augmentation-in-a-flow">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
